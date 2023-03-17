@@ -9,7 +9,7 @@
               class="form-control"
               placeholder="Enter text here"
               v-model="inputText"
-              rows="5"
+              rows="10"
             ></textarea>
             <div class="text-center mt-3">
               <button
