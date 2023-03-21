@@ -16,9 +16,9 @@ You also need to have access to the AWS Console to set up the backend.
 ### Installation
 
 To install the dependencies for the front-end server, run:
-'''
+```
 npm install
-'''
+```
 
 ### Configuration
 
@@ -30,12 +30,12 @@ Before running the server, you need to configure the following environment varia
 - `AWS_SECRET_ACCESS_KEY`: The secret access key for the same IAM user.
 
 You can set these environment variables using a `.env` file in the root directory of the project. An example `.env` file is included in this repository:
-'''
+```
 API_ENDPOINT=https://your-api-gateway-endpoint.amazonaws.com
 AWS_REGION=us-west-2
 AWS_ACCESS_KEY_ID=YOUR_ACCESS_KEY_ID
 AWS_SECRET_ACCESS_KEY=YOUR_SECRET_ACCESS_KEY
-'''
+```
 
 ### Running the Server
 
@@ -57,7 +57,7 @@ To deploy the backend, you can use the AWS Serverless Application Model (SAM) to
 
 To use the front-end server, you can send a POST request to the `/analyze` endpoint with a JSON payload containing the WeChat dialogue history that you want to analyze. Here's an example payload:
 
-'''
+```
 json
 {
   "dialogue": [
@@ -83,7 +83,7 @@ json
     }
   ]
 }
-'''
+```
 
 The server will send the dialogue history to the AWS API Gateway endpoint that you configured, and return the analysis result as a JSON object.
 
